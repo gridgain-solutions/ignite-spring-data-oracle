@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.8</version>
+		<relativePath />
+	</parent>
+
+	<groupId>org.gridgain.demo</groupId>
+	<artifactId>ignite-spring-data-oracle</artifactId>
+	<version>0.0.3-SNAPSHOT</version>
+	<name>ignite-spring-data-demo</name>
+	<description>Demo project for Spring Data, Spring Boot and Apache Ignite</description>
+
+	<properties>
+		<gridgain.version>8.9.13</gridgain.version>
+		<ignite-autoconfigure.version>1.0.0</ignite-autoconfigure.version>
+		<ignite-spring-data.version>2.0.0</ignite-spring-data.version>
+		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>GridGain External Repository</id>
+			<url>
+				https://www.gridgainsystems.com/nexus/content/repositories/external</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+		<!-- Apache Ignite -->
+		<dependency>
+			<groupId>org.gridgain</groupId>
+			<artifactId>ignite-core</artifactId>
+			<version>${gridgain.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gridgain</groupId>
+			<artifactId>ignite-indexing</artifactId>
+			<version>${gridgain.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gridgain</groupId>
+			<artifactId>control-center-agent</artifactId>
+			<version>${gridgain.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gridgain</groupId>
+			<artifactId>ignite-spring</artifactId>
+			<version>${gridgain.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.gridgain</groupId>
+			<artifactId>ignite-spring-data_2.2</artifactId>
+			<version>${gridgain.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.ignite</groupId>
+			<artifactId>ignite-spring-boot-autoconfigure-ext</artifactId>
+			<version>${ignite-autoconfigure.version}</version>
+		</dependency>
+
+		<!-- Oracle Connector-->
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc11</artifactId>
+			<version>23.2.0.0</version>
+		</dependency>
+
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+		</dependency>
+
+		<!-- JPA -->
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>javax.persistence-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+		</dependency>
+
+		<!-- Tests -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

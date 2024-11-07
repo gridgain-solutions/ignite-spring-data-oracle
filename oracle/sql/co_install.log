@@ -1,0 +1,453 @@
+Enter a password for the user CO: 
+
+                                                                                
+Enter a tablespace for CO [USERS]: 
+Do you want to overwrite the schema, if it already exists? [YES|no]: YES
+******  Creating CUSTOMERS table ....
+
+Table created.
+
+******  Creating STORES table ....
+
+Table created.
+
+******  Creating PRODUCTS table ....
+
+Table created.
+
+******  Creating ORDERS table ....
+
+Table created.
+
+******  Creating SHIPMENTS table ....
+
+Table created.
+
+******  Creating ORDER_ITEMS table ....
+
+Table created.
+
+******  Creating INVENTORY table ....
+
+Table created.
+
+******  Create views
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+******  Creating indexes ...
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+******  Adding constraints to tables ...
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+******  Adding table column comments ...
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Session altered.
+
+******  Populating CUSTOMERS table ....
+
+PL/SQL procedure successfully completed.
+
+******  Populating PRODUCTS table ....
+
+PL/SQL procedure successfully completed.
+
+******  Populating STORES table ....
+
+PL/SQL procedure successfully completed.
+
+******  Populating ORDERS table ....
+
+PL/SQL procedure successfully completed.
+
+******  Populating SHIPMENTS table ....
+
+PL/SQL procedure successfully completed.
+
+******  Populating ORDER_ITEMS table ....
+
+PL/SQL procedure successfully completed.
+
+******  Populating INVENTORY table ....
+
+PL/SQL procedure successfully completed.
+
+
+Commit complete.
+
+******  Resetting values for IDENTITY columns ....
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Installation
+-------------
+Verification:
+
+Table         provided     actual
+----------- ---------- ----------
+customers          392        392
+stores              23         23
+products            46         46
+orders            1950       1950
+shipments         1892       1892
+order_items       3914       3914
+inventory          566        566
+
+Thank you!
+--------------------------------------------------------
+The installation of the sample schema is now finished.
+Please check the installation verification output above.
+
+You will now be disconnected from the database.
+
+Thank you for using Oracle Database!
+
