@@ -29,11 +29,9 @@
 	</bean>
 	<!-- Data source bean -->
 	<bean class="oracle.jdbc.datasource.impl.OracleDataSource" id="oracleDataSource">
-		<property name="URL" value="jdbc:oracle:thin:@localhost:1521:FREE?user=system&amp;password=oracle"/>
-		<!-- 
+		<property name="URL" value="jdbc:oracle:thin:@localhost:1521:FREE"/>
 		<property name="user" value="system"/>
 		<property name="password" value="oracle" />
-		-->
 	</bean>
 
 </beans>

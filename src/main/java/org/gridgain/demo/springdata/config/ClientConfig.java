@@ -3,6 +3,7 @@ package org.gridgain.demo.springdata.config;
 import java.util.Arrays;
 
 import org.apache.ignite.Ignite;
+import org.apache.ignite.IgniteCache;
 import org.apache.ignite.configuration.DeploymentMode;
 import org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi;
 import org.apache.ignite.spi.discovery.tcp.ipfinder.vm.TcpDiscoveryVmIpFinder;
@@ -34,7 +35,8 @@ public class ClientConfig {
 		System.err.println("Create caches");
 		
 		System.err.println("Load Customers cache");
-		ignite.getOrCreateCache(new CustomersCacheConfiguration<Integer, Customers>()).loadCache(null);
+		IgniteCache<Integer, Customers> customersCache = ignite.getOrCreateCache(new CustomersCacheConfiguration<Integer, Customers>());
+		customersCache.loadCache(null);
 		ignite.getOrCreateCache(new InventoryCacheConfiguration<Integer, Inventory>()).loadCache(null);
 		ignite.getOrCreateCache(new OrderItemsCacheConfiguration<Integer, OrderItems>()).loadCache(null);
 		ignite.getOrCreateCache(new OrdersCacheConfiguration<Integer, Orders>()).loadCache(null);
