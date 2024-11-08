@@ -19,7 +19,7 @@
 	<description>Demo project for Spring Data, Spring Boot and Apache Ignite</description>
 
 	<properties>
-		<gridgain.version>8.9.13</gridgain.version>
+		<gridgain.version>8.9.14</gridgain.version>
 		<ignite-autoconfigure.version>1.0.0</ignite-autoconfigure.version>
 		<ignite-spring-data.version>2.0.0</ignite-spring-data.version>
 		<java.version>17</java.version>
